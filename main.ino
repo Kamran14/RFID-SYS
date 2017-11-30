@@ -7,7 +7,6 @@ LiquidCrystal lcd (7, 6, 5, 4, 3, 2); //Pins for LCD Screen
 #define RST_PIN 9           // Configurable, see typical pin layout above
 #define SS_PIN 10          // Configurable, see typical pin layout above
 byte Kamran = 10000001100101001001101111101011000000110010100100110111110101;
-int Shahzaib = 1000001110011111101010011101010110000011100111111010100111010101;
 int Johnn = 1001001110001100100011110010010011100011001000111100;
 int Janice = 1000101111000001001111110110010001011110000010011111101100;
 
@@ -157,11 +156,6 @@ void loop() {
    if (valueOnCard ==  2173999989) {
      Serial.println("Kam");
      lcd.print("Kam");
-     delay(1000);
-     lcd.clear();
-   } else if (valueOnCard == 2208278997) {
-     Serial.println("Shazio");
-     lcd.print("Shazi");
      delay(1000);
      lcd.clear();
    }else if (valueOnCard == 2475462400){
